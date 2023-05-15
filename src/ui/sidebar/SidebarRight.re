@@ -34,7 +34,7 @@ let make = (~active, ~goblint, ~inspect, ~dispatch) => {
         {switch (active) {
          | Nodes => <GvNodeStateView goblint inspect />
          | Globals => <GvGlobalStateView analyses=goblint#global_analyses />
-         | _ => <div/>
+         | _ => <div />
          }}
       </div>
     </div>
